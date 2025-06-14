@@ -8,7 +8,7 @@
 // Output: 3
 // https://leetcode.com/problems/majority-element/
 import java.util.*;
-class Solution {
+class MajorityElement {
     public int majorityElement(int[] nums) {
         int matchFreq=nums.length/2;
         Map<Integer,Integer> hm = new HashMap<>();

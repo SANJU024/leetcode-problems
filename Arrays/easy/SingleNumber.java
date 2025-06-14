@@ -1,4 +1,4 @@
-class Solution {
+class SingleNumber {
     public int singleNumber(int[] nums) {
         // Map<Integer,Integer> hm = new HashMap<>();
         // for(int num: nums){

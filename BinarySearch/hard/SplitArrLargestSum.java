@@ -1,25 +1,50 @@
+
+
 public class SplitArrLargestSum {
     public static void main(String[] args) {
         int[]nums={7,2,5,10,8};
         int m=2;
 
-        //brute force;
-        int maxi=0;
-        int min=Integer.MAX_VALUE;
-        for (int i = 1; i < nums.length; i++) {
-            int sumL=0;
-            int j;
-            for (j = 0; j < nums.length-i; j++) {
-                sumL+=nums[j];
+        int start=getMax(nums);
+        int end=getSum(nums);
+
+        while(start<end){
+            int mid=(start+end)/2; 
+            
+            int sum=0;
+            int pieces=1;
+            
+            for(int n:nums){
+                if(sum+n>mid){
+                    sum=n;
+                    pieces++;
+                }else{
+                    sum+=n;
+                }
             }
-            // maxi=Math.max(maxi,sumL);
-            int sumR=0;
-            for (int k = j; k < nums.length; k++) {
-                sumR+=nums[k];
+            if(pieces>m){
+                start=mid+1;
+            }else{
+                end=mid;
             }
-            // maxi=Math.max(maxi,sumR);
-            min=Math.min(min,Math.max(sumL,sumR));
+
         }
-        System.out.println(min);
-    }  
+        System.out.println(end);
+    }
+    
+    public static int getMax(int[]arr){
+        int maxi=0;
+        for (int i = 0; i < arr.length; i++) {
+            maxi=Math.max(maxi,arr[i]);
+        }
+        return maxi;
+    }
+
+    public static int getSum(int[]arr){
+        int sum=0;
+        for (int i = 0; i < arr.length; i++) {
+            sum+=arr[i];
+        }
+        return sum;
+    }
 }

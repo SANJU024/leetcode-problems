@@ -1,5 +1,6 @@
 // package LinkedList.Basics;
 
+
 public class SortLL extends SinglyLL{
 
     public ListNode findMid(ListNode head){
@@ -13,6 +14,7 @@ public class SortLL extends SinglyLL{
 
         return s;
     }
+
 
     public ListNode sort(ListNode head){
         if(head==null || head.next==null) return head;

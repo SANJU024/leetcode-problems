@@ -1,3 +1,4 @@
+package medium;
 import java.util.*;
 class RatInMaze {
     public static List<String> findPath(int[][] grid) {

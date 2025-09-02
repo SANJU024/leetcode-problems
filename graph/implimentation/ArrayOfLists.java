@@ -1,5 +1,3 @@
-// package graph.implimentation;
-
 import java.util.*;
 
 public class ArrayOfLists {
@@ -37,7 +35,5 @@ public class ArrayOfLists {
             }
             System.out.println();
         }
-        
     }
-    
 }

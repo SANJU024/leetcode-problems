@@ -1,4 +1,4 @@
-package queue.Implementation;
+// package queue.Implementation;
 
 import java.util.EmptyStackException;
 

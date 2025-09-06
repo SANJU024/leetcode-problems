@@ -31,13 +31,20 @@ public class Province{
     }
 
     public static void main(String[] args) {
-        int[][] mat = {
-            {1,0,0,1},
-            {0,1,1,0},
-            {0,1,1,1},
-            {1,0,1,1}
-        };
-        System.out.println(findCircleNum(mat));
+
+        int a=021;
+        int b=01;
+
+        System.out.println(a);
+        System.out.println(b);
+
+        // int[][] mat = {
+        //     {1,0,0,1},
+        //     {0,1,1,0},
+        //     {0,1,1,1},
+        //     {1,0,1,1}
+        // };
+        // System.out.println(findCircleNum(mat));
     }
 }
 

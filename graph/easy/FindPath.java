@@ -69,11 +69,16 @@ public class FindPath {
     }
     
     public static void main(String[] args) {
-        int v=6;
-        List<Edges> graph[]= new ArrayList[v];
-        createGraph(graph);
-        boolean[]visited= new boolean[v];
-       dijkstra(graph, 0, v);
+    //     int v=6;
+    //     List<Edges> graph[]= new ArrayList[v];
+    //     createGraph(graph);
+    //     boolean[]visited= new boolean[v];
+    //    dijkstra(graph, 0, v);
+        int size=2;
+        for(int i=0;i<size;i++){
+            size+=1;
+            System.out.println(size);
+        }
     }
 
     public static void findPath(List<Edges> graph[], boolean[]visited,int curr,int dest,String path,int weight, Result res){
